@@ -1,46 +1,4 @@
-header {
-  padding: 20px;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  background-color: rgb(46, 46, 46);
-}
-.headerH1 {
-  display: flex;
-  justify-content: center;
-  z-index: 1;
-}
-.headerH1 h1 {
-  margin: 0px;
-  font-size: 55px;
-}
-.headerButton {
-  width: 100%;
-  display: flex;
-  justify-content: start;
-  position: absolute;
-  z-index: 2;
-}
-.headerButton button {
-  background-color: rgb(46, 46, 46);
-  border: 0px;
-  margin-left: 20px;
-}
-.headerImagens {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-.headerImagens img {
-  padding: 5px;
-  width: 50px;
-}
-.headerImagens p {
-  color: rgb(135, 135, 135);
-  font-size: 20px;
-  margin: 0px;
-}
+
 
 .sectionCentral {
   display: flex;

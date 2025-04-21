@@ -1,0 +1,74 @@
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  margin: 20px;
+}
+.title input {
+  width: 1000px;
+  transition-duration: 0.1s;
+  background-color: rgb(76, 76, 76);
+  border: 1px rgb(255, 255, 255, 0.2) solid;
+  border-radius: 25px;
+  resize: none;
+  outline: none;
+  padding: 15px;
+  padding-left: 25px;
+  color: white;
+  font-size: 20px;
+}
+.title input:focus {
+  border: 1px rgb(255, 255, 255) solid;
+}
+
+.post {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.post textarea {
+  transition-duration: 0.1s;
+  background-color: rgb(76, 76, 76);
+  border: 1px rgb(255, 255, 255, 0.2) solid;
+  border-radius: 25px;
+  resize: none;
+  outline: none;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+}
+
+.post textarea:focus {
+  border: 1px rgb(255, 255, 255) solid;
+}
+
+.SendButton {
+  display: flex;
+  justify-content: end;
+  margin: 20px;
+  margin-right: 70px;
+}
+.SendButton button {
+
+  transition-duration: 0.4s;
+  align-self: center;
+  width: 100px;
+  margin: 0px;
+  margin-bottom: 100px;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: rgb(76, 76, 76);
+  border: 1px rgb(232, 231, 231,0.5) solid;
+  border-radius: 10px;
+  color: white;
+}
+
+.SendButton button:hover {
+    border: 1px rgb(232, 231, 231) solid;
+    background-color: white;
+    color: black;
+}
