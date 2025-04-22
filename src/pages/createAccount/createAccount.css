@@ -1,0 +1,94 @@
+section {
+  height: 100vh;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.createAccount {
+  background-color: rgb(83, 83, 83);
+  padding: 40px;
+  width: 40%;
+  height: 80%;
+  border: 1px rgb(83, 83, 83) solid;
+  border-radius: 20px;
+}
+.createAccount h1 {
+  margin: 0px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.createAccount div form {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+.createAccount div form div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+.createAccount div form div label {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+.createAccount div form div input {
+  background-color: rgb(83, 83, 83);
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  padding-left: 2px;
+  border: 0px;
+  border-bottom: 1px white solid;
+  height: 30px;
+  font-size: 20px;
+  color: white;
+  outline: none;
+}
+
+.loginOrRegister {
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.loginOrRegister button {
+  font-size: 20px;
+  align-self: end;
+  width: 160px;
+  height: 60px;
+  background-color: rgb(83, 83, 83);
+  border: 1px rgb(232, 231, 231, 0.5) solid;
+  border-radius: 10px;
+  color: white;
+}
+
+.loginOrRegister button:hover {
+  border: 1px rgb(232, 231, 231) solid;
+  background-color: white;
+  color: black;
+}
+.loginOrRegister button:active {
+  border: 1px rgb(232, 231, 231, 0.5) solid;
+  background-color: rgb(83, 83, 83);
+  color: white;
+}
+
+.loginOrRegister a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+.loginOrRegister a:hover{
+    text-decoration: none;
+    color: rgb(60, 144, 246);
+}

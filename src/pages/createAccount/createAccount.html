@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./createAccount.css" />
+    <link rel="stylesheet" href="/src/style/global.css" />
+    <link rel="stylesheet" href="/src/style/components/button.css" />
+    <title>createAccount</title>
+  </head>
+  <body>
+    <section>
+      <div class="createAccount">
+        <h1>Criar conta</h1>
+        <div>
+          <form action="" method="get">
+            <div>
+              <label for="userName">nome:</label>
+              <input type="text" name="userName" id="userName" required />
+            </div>
+            <div>
+              <label for="userNickname">digite seu apelido:</label>
+              <input
+                type="text"
+                name="userNickname"
+                id="userNickname"
+                required
+              />
+            </div>
+            <div>
+              <label for="userEmail">digite seu email:</label>
+              <input type="email" name="userEmail" id="userEmail" required />
+            </div>
+            <div>
+              <label for="userPassword">digite sua senha:</label>
+              <input
+                type="password"
+                name="userPassword"
+                id="userPassword"
+                required
+              />
+            </div>
+            <div>
+              <label for="userPasswordConfirmation">confime sua senha:</label>
+              <input
+                type="password"
+                name="userPasswordConfirmation"
+                id="userPasswordConfirmation"
+                required
+              />
+            </div>
+          </form>
+          <div class="loginOrRegister">
+            <a href="#">ja possui um conta?</a>
+            <button type="submit">criar conta</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
