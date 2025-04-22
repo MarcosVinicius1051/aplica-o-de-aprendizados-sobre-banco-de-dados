@@ -1,0 +1,101 @@
+section {
+  height: 100vh;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginAccount {
+  background-color: rgb(83, 83, 83);
+  padding: 40px;
+  width: 40%;
+  height: 80%;
+  border: 1px rgb(83, 83, 83) solid;
+  border-radius: 20px;
+}
+
+.loginAccount h1 {
+  margin: 0px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-size: 70px;
+  text-align: center;
+}
+
+.loginAccount div form {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+
+  gap: 80px;
+}
+
+.loginAccount div form div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+.loginAccount div form div label {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+.loginAccount div form div input {
+  background-color: rgb(83, 83, 83);
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  padding-left: 2px;
+  border: 0px;
+  border-bottom: 1px white solid;
+  height: 30px;
+  font-size: 20px;
+  color: white;
+  outline: none;
+}
+
+
+.loginOrCreateAccount {
+  margin: 20px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.loginOrCreateAccount button {
+  font-size: 20px;
+  align-self: end;
+  width: 160px;
+  height: 60px;
+  background-color: rgb(83, 83, 83);
+  border: 1px rgb(232, 231, 231, 0.5) solid;
+  border-radius: 10px;
+  color: white;
+}
+
+.loginOrCreateAccount button:hover {
+  border: 1px rgb(232, 231, 231) solid;
+  background-color: white;
+  color: black;
+}
+.loginOrCreateAccount button:active {
+    transition-duration: 0s;
+  border: 1px rgb(232, 231, 231, 0.5) solid;
+  background-color: rgb(28, 132, 243);
+  color: rgb(0, 0, 0);
+}
+
+.loginOrCreateAccount a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+.loginOrCreateAccount a:hover{
+    text-decoration: none;
+    color: rgb(60, 144, 246);
+}
