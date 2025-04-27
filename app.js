@@ -1,18 +1,31 @@
 import express from "express";
-import path from "path";
+import router from "./src/routes/mainRoute.js";
 
-export const app = express();
-export const __dirname = path.resolve(); 
+const app = express();
 const port = 8080;
 
-app.get("/",(req,res)=>{
-  res.sendFile(__dirname + "/index.html")
-})
+//Config
 
+  //body parser
+    app.use(express.urlencoded({extended: true}));
+    app.use(express.json())
+
+  //ejs 
+    app.set("view engine", "ejs");
+
+  //public 
+  app.use(express.static("./src/public"))
+
+  //routes
+  app.use("/mainRoute",router);
+
+  router.get("/",(req,res)=>{
+    res.send("ola");
+  });
 
 app.listen(port, ()=>{
   console.log("servidor ligado")
-})
+});
 
 
 

@@ -1,4 +1,3 @@
-import { TINYINT } from "sequelize";
 import mongoose from "./db.js";
 
 const Schema  = mongoose.Schema; 
