@@ -14,6 +14,24 @@ router.get("/createAccount",(req,res)=>{
 });
 // Rotas - Login/Registro
     router.post("/logging",(req,res)=>{
+        UserModel.find().lean().then((usuarios)=>{
+            const loginUsuario = {
+                nome:req.body.nameUser,
+                senha:req.body.passwordUser
+            }
+            return usuarios.map((usuarios)=>{
+                if((usuarios.nome == loginUsuario.nome || usuarios.email == loginUsuario.nome)&& usuarios.senha == loginUsuario.senha ){
+                    console.log("usuario logado!");
+                    return res.redirect("/mainRoute/home")
+                }else{
+                    console.log("nome ou senha errados!")
+                    return res.redirect("/mainRoute/login")
+                }
+            })
+            
+        }).catch((err)=>{
+            console.log("algo deu errado ao fazer o login: "+err);
+        })
         /* aqui vai ser o intermediario para logar na conta */
     });
     router.post("/registering",(req,res)=>{
