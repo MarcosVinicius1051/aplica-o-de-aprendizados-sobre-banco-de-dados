@@ -13,20 +13,20 @@
         <div class="loginAccount">
             <h1>Login</h1>
             <div>
-                <form action="">
+                <form action="/mainRoute/logging" method="post">
                     <div>
-                        <label for="">nome ou email:</label>
+                        <label for="">Nome/Email:</label>
                         <input type="text email">
                     </div>
                     <div>
-                        <label for="">senha:</label>
+                        <label for="">Senha:</label>
                         <input type="password">
                     </div>
+                    <div class="loginOrCreateAccount">
+                        <button type="submit">Logar</button>
+                        <a href="/mainRoute/createAccount">criar conta</a>
+                    </div>
                 </form>
-                <div class="loginOrCreateAccount">
-                    <a href="/mainRoute/createAccount">criar conta</a>
-                    <button>Logar</button>
-                </div>
             </div>
         </div>
     </section>

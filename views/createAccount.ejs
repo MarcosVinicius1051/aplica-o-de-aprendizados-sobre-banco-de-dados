@@ -13,13 +13,13 @@
       <div class="createAccount">
         <h1>Criar conta</h1>
         <div>
-          <form action="" method="get">
+          <form action="/mainRoute/registering" method="post">
             <div>
-              <label for="userName">nome:</label>
+              <label for="userName">Nome:</label>
               <input type="text" name="userName" id="userName" required />
             </div>
             <div>
-              <label for="userNickname">digite seu apelido:</label>
+              <label for="userNickname">Apelido:</label>
               <input
                 type="text"
                 name="userNickname"
@@ -28,11 +28,11 @@
               />
             </div>
             <div>
-              <label for="userEmail">digite seu email:</label>
+              <label for="userEmail">Email:</label>
               <input type="email" name="userEmail" id="userEmail" required />
             </div>
             <div>
-              <label for="userPassword">digite sua senha:</label>
+              <label for="userPassword">Senha:</label>
               <input
                 type="password"
                 name="userPassword"
@@ -41,7 +41,7 @@
               />
             </div>
             <div>
-              <label for="userPasswordConfirmation">confime sua senha:</label>
+              <label for="userPasswordConfirmation">Confime sua senha:</label>
               <input
                 type="password"
                 name="userPasswordConfirmation"
@@ -49,11 +49,11 @@
                 required
               />
             </div>
+            <div class="loginOrRegister">
+              <button type="submit">criar conta</button>
+              <a href="/mainRoute/login">ja possui um conta?</a>
+            </div>
           </form>
-          <div class="loginOrRegister">
-            <a href="/mainRoute/login">ja possui um conta?</a>
-            <button type="submit">criar conta</button>
-          </div>
         </div>
       </div>
     </section>

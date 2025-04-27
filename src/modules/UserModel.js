@@ -1,4 +1,4 @@
-import mongoose from "./db";
+import mongoose from "./db.js";
 const Schema = mongoose.Schema;
 
 //Model 

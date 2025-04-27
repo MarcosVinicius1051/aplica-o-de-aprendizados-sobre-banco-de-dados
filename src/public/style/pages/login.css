@@ -60,16 +60,18 @@ section {
 
 .loginOrCreateAccount {
   margin: 20px;
-  margin-top: 80px;
+  margin-top: 10px;
   display: flex;
-  justify-content: space-around;
+  flex-direction: row-reverse;
+  justify-content: center;
   align-items: center;
+  /* resolver isso*/
+
 }
 
 .loginOrCreateAccount button {
   font-size: 20px;
-  align-self: end;
-  width: 160px;
+  width: 250px;
   height: 60px;
   background-color: rgb(83, 83, 83);
   border: 1px rgb(232, 231, 231, 0.5) solid;
@@ -89,13 +91,14 @@ section {
   color: rgb(0, 0, 0);
 }
 
-.loginOrCreateAccount a{
+.loginOrCreateAccount  a{
     text-decoration: none;
+    width: 100px;
     font-size: 20px;
     color: white;
     padding: 10px;
 }
-.loginOrCreateAccount a:hover{
+.loginOrCreateAccount  a:hover{
     text-decoration: none;
     color: rgb(60, 144, 246);
 }
