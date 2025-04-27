@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./createPost.css" />
-    <link rel="stylesheet" href="/src/style/global.css" />
-    <link rel="stylesheet" href="/src/style/components/button.css" />
-    <link rel="stylesheet" href="/src/style/components/headerPages.css" />
+    <link rel="stylesheet" href="/style/pages/createPost.css" />
+    <link rel="stylesheet" href="/style/global.css" />
+    <link rel="stylesheet" href="/style/components/button.css" />
+    <link rel="stylesheet" href="/style/components/headerPages.css" />
     <title>Document</title>
   </head>
   <body>
@@ -25,20 +25,17 @@
     </header>
 
     <section class="sectionCentral">
+      <form action="/mainRoute/sendNewPost" method="post">
         <div class="title">
-            <form >
-                <input type="text" name="titulo" placeholder="titulo" required> 
-            </form>
+          <input type="text" name="titulo" placeholder="titulo" required>  
         </div>
         <div class="post">
-            <form action="" method="get">   
-                <textarea name="texto" id="" cols="120" rows="20"   placeholder="digite o conteudo do post" maxlength="2500" required  wrap="soft"></textarea>
-            </form>
+          <textarea name="texto" id="" cols="120" rows="20"   placeholder="digite o conteudo do post" maxlength="2500" required  wrap="soft"></textarea>  
         </div>
         <div class="SendButton">
-            <button>enviar</button>
+          <button type="submit">enviar</button>
         </div>
-        
+      </form>
     </section>
 
     <footer>

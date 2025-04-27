@@ -1,9 +1,8 @@
 import express from "express";
-import PostModel from "../modules/PostModel.js";
 import UserModel from "../modules/UserModel.js";
 
 const router = express.Router();
-//Rotas - principais
+//Rotas - Login/criar conta
 
 router.get("/login",(req,res)=>{
     res.render("login");
@@ -72,9 +71,7 @@ router.get("/createAccount",(req,res)=>{
         })
         
     })
-//Rotas - conta/posts
-    router.get("/home",(req,res)=>{
-        res.render("home")
-    })
+
+    
 
 export default router

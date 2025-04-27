@@ -11,25 +11,30 @@ margin:0px;
 margin-top:15px
 }
 
-header button {
+header a {
     background-color: rgb(46, 46, 46);
     border: 0px;
-}
-.headerImagens{
+    color: rgb(135, 135, 135);
+    text-decoration: none;
     display: flex;
     flex-direction: column;
-    
+    gap: 5px;
+
 }
-.headerImagens img{
+header a:hover{
+    color: white;
+}
+header a img{
     width: 70px;
-    
 }
-.headerImagens p{ 
-    color: rgb(135, 135, 135);
+header a p{
     text-align: center;
     font-size: 15px;
     margin: 0px;
+    text-decoration: none;
 }
+
+
 
 
 .sectionCentral{

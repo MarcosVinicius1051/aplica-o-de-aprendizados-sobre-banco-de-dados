@@ -1,5 +1,6 @@
 import express from "express";
-import router from "./src/routes/mainRoute.js";
+// import router from "./src/routes/mainRoute.js";
+import router from "./src/routes/postRoute.js";
 
 const app = express();
 const port = 8080;
