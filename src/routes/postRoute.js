@@ -12,7 +12,8 @@ router.post("/sendNewPost",(req,res)=>{
         const novaPostagem = {
             postId:postagem.length,
             titulo: req.body.titulo,
-            conteudo:req.body.texto
+            conteudo:req.body.texto,
+            favorito: false
         }
         new PostModel(novaPostagem).save().then(()=>{
             console.log("novo post criado");

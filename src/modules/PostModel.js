@@ -15,6 +15,9 @@ const Schema  = mongoose.Schema;
         conteudo:{
             type:String,
             required:true
+        },
+        favorito:{
+            type:Boolean
         }
 
     });

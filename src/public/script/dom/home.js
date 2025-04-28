@@ -1,8 +1,8 @@
-const createNewPostLink = document.querySelector(".createNewPostLink")
+const createNewPostLink = document.querySelector(".createNewPostLink");
 const createNewPostImage = document.querySelector(".createNewPostLink img");
-const accessContLink = document.querySelector(".accessContLink")
-const accessContLinkImage = document.querySelector(".accessContLink img" )
-// simplismente fazer a mesma coisa que fez para o add post
+const accessContLink = document.querySelector(".accessContLink");
+const accessContLinkImage = document.querySelector(".accessContLink img" );
+
 
 createNewPostLink.addEventListener("mouseenter",(evt)=>{
     createNewPostImage.src = "/assets/images/headerImages/addHover.png"
