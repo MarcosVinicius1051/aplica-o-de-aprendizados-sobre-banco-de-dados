@@ -25,19 +25,7 @@
     </header>
 
     <section class="sectionCentral">
-      <% for(let i=0;i<novoPost.length;i++){ %>
-        <div class="post" id= <%= novoPost[i].postId %>>
-            <div class="postContent">
-                <h1><%= novoPost[i].titulo %></h1>
-            <p><%=novoPost[i].conteudo  %></p>
-            </div>
-            <div class="postsProperties">
-                <img src="/assets/images/postsImages/delete.png" alt="del">
-                <img src="/assets/images/postsImages/favorite.png" alt="fav">
-                <img src="/assets/images/postsImages/setting.png" alt="set">
-            </div>
-        </div>
-        <% } %>
+      <%- include("../views/posts"); -%>
     </section>
 
     <footer>
@@ -48,5 +36,6 @@
     </footer>
 
     <script src="/script/dom/home.js"></script>
+    <script src="/script/utils/deletePostButton.js"></script>
   </body>
 </html>

@@ -6,7 +6,7 @@ import router from "./mainRoute.js";
 router.get("/createPost",(req,res)=>{
    res.render("createPost")
 });
-
+//Criar o post
 router.post("/sendNewPost",(req,res)=>{
     PostModel.find().lean().then((postagem)=>{
         const novaPostagem = {
@@ -29,5 +29,17 @@ router.get("/home",(req,res)=>{
     }).catch((err)=>{
         console.log("algo deu eo carregar os posts: "+err);
     })
+})
+
+//Deletar Post
+
+router.post("/deletarPost",(req,res)=>{
+    PostModel.deleteOne({postId: req.body.postId}).then(()=>{
+        console.log("post deletado com sucesso");
+        res.redirect("/mainRoute/home")
+    }).catch((err)=>{
+        console.log("erro ao tentar deletar o post: " + err)
+    });
+    
 })
 export default router

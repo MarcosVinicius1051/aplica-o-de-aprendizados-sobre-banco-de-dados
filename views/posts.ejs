@@ -1,0 +1,23 @@
+<% for(let i=0;i<novoPost.length;i++){ %>
+    <div class="post" id= <%= novoPost[i].postId %>>
+        <div class="postContent">
+            <h1><%= novoPost[i].titulo %></h1>
+        <p><%=novoPost[i].conteudo  %></p>
+        </div>
+        <div class="postsProperties">
+          <form action="/mainRoute/deletarPost" method="post">
+            <input type="hidden" name="postId" value="<%= novoPost[i].postId %>">
+            <button type="submit">
+              <img src="/assets/images/postsImages/delete.png" alt="del">
+            </button>
+          </form>
+          <button>
+            <img src="/assets/images/postsImages/favorite.png" alt="fav">
+          </button>
+          <button>
+            <img src="/assets/images/postsImages/setting.png" alt="set">
+          </button>
+        </div>
+    </div>
+
+    <% } %>
